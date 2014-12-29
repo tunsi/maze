@@ -13,9 +13,17 @@
 		<aspectj.version>1.7.2</aspectj.version>
 		<slf4j.version>1.7.6</slf4j.version>
 		<commons-dbcp.version>1.2.2</commons-dbcp.version>
+		<hibernate.version>4.3.7.Final</hibernate.version>
+		<paho-mqtt.version>1.0.1</paho-mqtt.version>
 	</properties>
 
 	<dependencies>
+		<dependency>
+			<groupId>org.eclipse.paho</groupId>
+			<artifactId>org.eclipse.paho.client.mqttv3</artifactId>
+			<version>${paho-mqtt.version}</version>
+		</dependency>
+
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-core</artifactId>
@@ -29,6 +37,15 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-orm</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>${hibernate.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.aspectj</groupId>
@@ -90,6 +107,11 @@
 			<id>tunsi</id>
 			<url>http://localhost:8081/nexus/content/groups/public/</url>
 		</repository>
+		<repository>
+			<id>Eclipse Paho Repo</id>
+			<url>https://repo.eclipse.org/content/repositories/paho-releases/</url>
+		</repository>
+
 	</repositories>
 
 	<distributionManagement>
