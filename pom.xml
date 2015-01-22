@@ -100,6 +100,22 @@
 			<version>2.2</version>
 			<scope>provided</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>asm</groupId>
+			<artifactId>asm-all</artifactId>
+			<version>3.3.1</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>me.qmx.jitescript</groupId>
+			<artifactId>jitescript</artifactId>
+			<version>0.3.0</version>
+			<scope>test</scope>
+		</dependency>
+
+
 	</dependencies>
 
 	<repositories>
